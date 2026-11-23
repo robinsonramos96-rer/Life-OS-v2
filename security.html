@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Life OS Security</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="How Life OS protects your household’s data, in plain words.">
+<link rel="icon" href="app/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css"></head><body><header class="site-head"><div class="wrap">
+    <a class="logo" href="index.html" aria-label="Life OS home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--accent)"/><circle cx="32" cy="32" r="16" fill="none" stroke="var(--accent-ink)" stroke-width="4"/><path d="M32 20v12l8 6" stroke="var(--accent-ink)" stroke-width="4" stroke-linecap="round" fill="none"/></svg><b>Life OS</b></a>
+    <nav class="nav" aria-label="Main"><a href="features.html" >Features</a><a href="learn.html" >Learn</a><a href="pricing.html" >Pricing</a><a href="security.html" aria-current="page">Security</a></nav>
+    <div class="head-cta"><a class="btn sm signin" href="app/index.html">Sign in</a><a class="btn sm primary" href="app/index.html#signup">Start free</a></div>
+  </div></header><main>
+<section class="hero" style="padding-bottom:12px"><div class="wrap" style="grid-template-columns:minmax(0,1fr)"><div class="hero-copy"><h1>How your data is protected</h1><p class="lede">Life OS holds the details of family life, so it is built to collect little, keep each household sealed off, and let you leave with everything. Here is exactly what that means.</p></div></div></section>
+<section class="section" style="padding-top:24px"><div class="wrap"><div class="facts-list">
+  <div><b>Each household is sealed off</b><p>The database checks every single request against row-level security rules: you can only read and write your own household’s records. These rules are tested automatically, including attempts by one household to read another’s.</p></div>
+  <div><b>Private items stay private</b><p>An item marked private is stored so that only its creator can read it, even inside a shared household.</p></div>
+  <div><b>Encrypted in transit and at rest</b><p>Every connection uses HTTPS (TLS). The database is hosted by Supabase, which encrypts stored data with AES-256.</p></div>
+  <div><b>Passwords</b><p>Sign-in is handled by Supabase Auth, which stores passwords as bcrypt hashes, never in readable form. Passwords must be at least 10 characters. Email sign-in links and password resets expire.</p></div>
+  <div><b>Card details never reach us</b><p>Checkout and billing pages are run by Stripe. Life OS stores only your plan’s status and Stripe’s reference to your subscription.</p></div>
+  <div><b>No trackers in the app</b><p>The app loads no analytics, advertising or third-party scripts (the exceptions are Cloudflare’s “I am human” check on the sign-up screen, if it is turned on, and Google’s sign-in script on the Settings page when Google sync is set up), and its fonts are served from the same place as the app. A strict content security policy only lets the app’s own code run and only lets it talk to its own database and, for people who connect them, Google Calendar and Tasks.</p></div>
+  <div><b>Google access stays on your device</b><p>Connecting Google gives your browser a token that lasts about an hour, limited to the calendar Life OS makes and to Google Tasks. It is never sent to our servers, and Disconnect hands it back to Google.</p></div>
+  <div><b>Secret keys stay on the server</b><p>The keys that can bypass the household rules never appear in the app or the website. Every build is scanned and refuses to finish if one shows up.</p></div>
+  <div><b>Email to Life OS is locked down</b><p>Each household’s address carries a long random token. Mail is accepted only from household members (and addresses they add), and only up to a daily limit. Mail whose sender fails the receiving server’s SPF or DMARC checks, a sign of a forged address, is refused. You can replace the address at any time.</p></div>
+  <div><b>Backups are encrypted</b><p>Nightly backups are encrypted with a key that only the operator holds offline (RSA-4096 and AES-256-GCM), and they are deleted automatically after 30 days.</p></div>
+  <div><b>Leaving is easy</b><p>Export everything at any time. Deleting your account erases your household from the live database immediately; encrypted backups age out within 30 days.</p></div>
+  <div><b>What we ask of you</b><p>Use a password you don’t use anywhere else. Don’t store card numbers, bank account numbers, or ID numbers like Social Security numbers in Life OS; it doesn’t need them.</p></div>
+  <div><b>Found a problem?</b><p>Please email <span class="todo">[security email]</span>. We’ll confirm we got it within two business days and keep you updated while we fix it. Please don’t access other people’s data while testing.</p></div>
+</div></div></section></main><footer class="site-foot"><div class="wrap">
+    <div class="about" style="display:grid;gap:10px"><a class="logo" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--accent)"/><circle cx="32" cy="32" r="16" fill="none" stroke="var(--accent-ink)" stroke-width="4"/><path d="M32 20v12l8 6" stroke="var(--accent-ink)" stroke-width="4" stroke-linecap="round" fill="none"/></svg><b>Life OS</b></a><p>One private place for your family’s whole life. Remember what matters; plan for your best life.</p><p class="small">Screens on this site show a made-up sample family.</p></div>
+    <nav aria-label="Product"><b>Product</b><a href="features.html">Features</a><a href="learn.html">Learn Life OS</a><a href="pricing.html">Pricing</a><a href="app/index.html?demo=1">Try the demo</a></nav>
+    <nav aria-label="Account"><b>Account</b><a href="app/index.html#signup">Start a free trial</a><a href="app/index.html">Sign in</a></nav>
+    <nav aria-label="Legal"><b>Trust</b><a href="security.html">Security</a><a href="privacy.html">Privacy Policy</a><a href="health-privacy.html">Consumer Health Data Privacy Policy</a><a href="terms.html">Terms</a></nav>
+  </div></footer><script src="assets/site.js" defer></script></body></html>

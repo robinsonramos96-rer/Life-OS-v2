@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Life OS</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="One private place for your family’s whole life: tasks, calendar, upkeep, health, money and goals.">
+<link rel="icon" href="app/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css"></head><body><header class="site-head"><div class="wrap">
+    <a class="logo" href="index.html" aria-label="Life OS home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--accent)"/><circle cx="32" cy="32" r="16" fill="none" stroke="var(--accent-ink)" stroke-width="4"/><path d="M32 20v12l8 6" stroke="var(--accent-ink)" stroke-width="4" stroke-linecap="round" fill="none"/></svg><b>Life OS</b></a>
+    <nav class="nav" aria-label="Main"><a href="features.html" >Features</a><a href="learn.html" >Learn</a><a href="pricing.html" >Pricing</a><a href="security.html" >Security</a></nav>
+    <div class="head-cta"><a class="btn sm signin" href="app/index.html">Sign in</a><a class="btn sm primary" href="app/index.html#signup">Start free</a></div>
+  </div></header><main>
+<section class="hero"><div class="wrap">
+  <div class="hero-copy">
+    <h1>Remember what matters. Plan for your best life.</h1>
+    <p class="lede">Life OS is one private place for everything your family keeps track of: appointments, school dates, the car, the house, money, health records and goals. Tell it things the way you would say them. It sorts them, remembers them, and shows you what needs you today.</p>
+    <div class="cta-row"><a class="btn primary" href="app/index.html#signup">Start your free 30 days</a><a class="btn" href="app/index.html?demo=1">Try the demo</a></div>
+    <p class="note">No card needed to start. A few questions fill in the basics most families forget. Your data is yours to export any time.</p>
+  </div>
+  <div class="sandbox" data-sandbox="quick">
+    <label for="qa-4">Try it. Type something you need to remember.</label>
+    <input id="qa-4" value="renew car registration due mar 1 #assets !critical" autocomplete="off" spellcheck="false">
+    <div class="examples"><button type="button" data-example="dentist @kid1 fri 3pm #health">dentist @kid1 fri 3pm #health</button><button type="button" data-example="oil change every 5000 miles #minivan">oil change every 5000 miles #minivan</button><button type="button" data-example="book plumber do sat due fri #home">book plumber do sat due fri #home</button><button type="button" data-example="call mom tomorrow">call mom tomorrow</button></div>
+    <div data-out></div></div>
+</div></section>
+
+<section class="section" style="padding-top:0"><div class="wrap">
+  <div class="screens"><div class="browser"><div class="bar"><span></span><span></span><span></span></div><picture><source srcset="assets/shots/home-desktop-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/home-desktop.webp" alt="Life OS Home: Today with the schedule, My Day and suggestions, what needs you first, and the week ahead across every part of life" width="1440" height="900" ></picture></div>
+  <div class="phone"><img src="assets/shots/home-phone.webp" alt="Life OS Home on a phone" width="585" height="1266" loading="lazy"></div></div>
+  <p class="caption">Home for Rob and Crystal, a made-up sample family: Today first (their schedule, My Day and suggestions), the safety net beside it, this week’s planner and the life timeline below. Tap any number at the top to see the items behind it.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>People don’t want to manage their lives.</h2><p>They want to remember what’s important, plan for the life they want, and never drop the ball on the things that can’t slip. Life OS does the bookkeeping for all three, so the time you spend in it stays small.</p></div>
+  <div class="ideas">
+    <div class="idea"><span class="eyebrow">Remember</span><h3>Say it once, in your own words</h3><p>Type “oil change every 5000 miles #minivan” or forward the school’s email. Life OS works out what it is, where it belongs and when it matters. Every item gets a short ID, like AST-2, so you can find it again.</p></div>
+    <div class="idea"><span class="eyebrow">Plan</span><h3>A day that fits the time you have</h3><p>Each item can have a do date (when you plan to work on it) and a due date (the real deadline). My Day holds what you picked for today, with suggestions for what is late, due or slipped, and Plan my week spreads the rest across the evenings that have room.</p></div>
+    <div class="idea"><span class="eyebrow">Never drop the ball</span><h3>A safety net for what can’t slip</h3><p>Mark something critical and it climbs as its date nears: into the morning email, into the email’s subject line, then flagged for both of you. It also notices when a part of life has gone unusually quiet.</p>
+      <div class="ladder" aria-label="How a critical item escalates, with a 30-day lead time"><div class="rung s1"><span class="when">30 days out</span><b>Morning email</b></div><div class="rung s2"><span class="when">8 days</span><b>Email alert</b></div><div class="rung s3"><span class="when">1 day</span><b>Both of you</b></div><div class="rung s4"><span class="when">after</span><b>Overdue</b></div></div></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Seven parts of life, one database</h2><p>Everything lives in a domain, and its ID starts with the domain’s code. Rename them, recolor them, delete the ones you don’t need, or add your own, like Pets or Faith.</p></div>
+  <div class="domains"><div class="dom" style="--c:var(--d1)"><span class="dot"></span><b>Personal <span class="ref">PER</span></b><span class="ex"><span class="ref">PER-4</span>Renew passport · due Mar 1 · critical</span></div><div class="dom" style="--c:var(--d2)"><span class="dot"></span><b>Family <span class="ref">FAM</span></b><span class="ex"><span class="ref">FAM-17</span>Parent-teacher conference · Thu 4pm</span></div><div class="dom" style="--c:var(--d3)"><span class="dot"></span><b>Home <span class="ref">HOM</span></b><span class="ex"><span class="ref">HOM-9</span>Replace HVAC filter · every 90 days</span></div><div class="dom" style="--c:var(--d4)"><span class="dot"></span><b>Assets <span class="ref">AST</span></b><span class="ex"><span class="ref">AST-2</span>Oil change · every 5,000 miles or 6 months</span></div><div class="dom" style="--c:var(--d5)"><span class="dot"></span><b>Health <span class="ref">HLT</span></b><span class="ex"><span class="ref">HLT-3</span>Kid 1 dental cleaning · every 6 months</span></div><div class="dom" style="--c:var(--d6)"><span class="dot"></span><b>Business & Career <span class="ref">BIZ</span></b><span class="ex"><span class="ref">BIZ-6</span>Log PE experience hours · weekly</span></div><div class="dom" style="--c:var(--d7)"><span class="dot"></span><b>Growth & Learning <span class="ref">GRW</span></b><span class="ex"><span class="ref">GRW-2</span>Study hours · 4 a week target</span></div></div>
+</div></section>
+
+<section class="section"><div class="wrap split">
+  <div class="section-head" style="margin:0"><h2>Forward it instead of typing it</h2><p>Your household gets a private email address. Forward a confirmation, send a calendar invite, or write a subject line from your phone. The subject decides what it becomes. Updated or canceled invites update the same event, and nothing is ever added twice.</p>
+    <div class="addr">yourfamily.lifeos+k7m2q9xpabcd2345@gmail.com</div>
+    <p class="small muted">Only people in your household can send to it. Strangers’ mail is ignored, and you can replace the address in one tap if it ever leaks.</p></div>
+  <div class="table-scroll"><table class="mail-table"><tbody>
+    <tr><td><code>Task: renew passport due mar 1</code></td><td>a task with a deadline</td></tr>
+    <tr><td><code>Event: recital sat 2pm @kid1</code></td><td>an event on the calendar, for Kid 1</td></tr>
+    <tr><td><code>Done: oil change 62,450 miles</code></td><td>a log entry, and the oil change routine starts over from that mileage</td></tr>
+    <tr><td><code>Routine: water filter every 180 days</code></td><td>a repeating upkeep item</td></tr>
+    <tr><td><code>Invitation: Pediatrician checkup</code></td><td>any calendar invite becomes an event; moves and cancellations follow it</td></tr>
+    <tr><td><code>Fwd: Your prescription is ready</code></td><td>no prefix: it waits in the Inbox with Health suggested</td></tr>
+  </tbody></table></div>
+</div></section>
+
+<section class="section"><div class="wrap split">
+  <div class="section-head" style="margin:0"><h2>On the calendar you already use, so nothing slips</h2><p>Connect Google Calendar and Google Tasks, and Life OS keeps a “Life OS” calendar and task list current in your own Google account, with the reminders already set. Your phone reminds you, even when Life OS is closed.</p>
+    <p>Your partner doesn’t need to open another app to stay on top of things: each adult connects their own Google, and what’s theirs and shared shows up on the calendar they already check.</p>
+    <p class="small muted">Life OS only touches the calendar and list it makes, never the rest of your Google account. Every event and task has an “Open in Life OS” link straight to its item.</p></div>
+  <div class="table-scroll"><table class="mail-table"><tbody>
+    <tr><td><b>Appointments and events</b></td><td>timed events, with a reminder the day before and an hour before</td></tr>
+    <tr><td><b>Critical deadlines and renewals</b></td><td>all-day dates, with a reminder at their lead time, like 30 days before a registration expires</td></tr>
+    <tr><td><b>Upkeep coming due</b></td><td>the oil change or the furnace filter, on the day it’s due</td></tr>
+    <tr><td><b>Tasks</b></td><td>in Google Tasks on their do date; tick one off there and it’s done in Life OS</td></tr>
+    <tr><td><b>Moved it in Google?</b></td><td>a new time or title comes back to Life OS, and so does anything you add to the Life OS calendar</td></tr>
+  </tbody></table></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Shared by the adults, about the whole family</h2><p>Invite your partner with a link. You both see the same Life OS on every device, and either of you can mark an item private.</p></div>
+  <div class="points">
+    <div class="point"><h3>Owners and subjects</h3><p>An owner does the work; a subject is who it’s about. Crystal can own Kid 1’s dentist appointment, and both kids’ checkups show on one health timeline.</p></div>
+    <div class="point"><h3>Works on every phone</h3><p>Add it to your home screen on iPhone or Android and it opens like an app. It keeps working offline and syncs when you’re back.</p></div>
+    <div class="point"><h3>A calendar of everything</h3><p>Do dates, deadlines, events, upkeep, renewals and milestones on one calendar. Filter it to a domain or a person; save the views you use.</p></div>
+    <div class="point"><h3>Yours to take with you</h3><p>Export everything as a full backup, a spreadsheet or a calendar file, whenever you like. Delete your account and it’s erased.</p></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap split">
+  <div class="closing"><h2>Try it with your own life for 30 days</h2><p class="muted">No card to start. $72 a year (three months free) or $8 a month after that, for your whole household. If you don’t continue, everything stays readable and exportable.</p>
+    <div class="cta-row"><a class="btn primary" href="app/index.html#signup">Start free</a><a class="btn" href="learn.html">Learn it in ten minutes</a></div></div>
+  <div class="faq">
+    <details><summary>Who can see our data?</summary><p>Only the people in your household. The database itself enforces this on every request, so one household can never read another’s records. We don’t sell data, show ads, or use it to train AI models.</p></details>
+    <details><summary>What should I not put in it?</summary><p>Card numbers, bank account numbers and ID numbers like Social Security numbers. Life OS doesn’t need them to remind you, so leave them where they are and write where to find them instead.</p></details>
+    <details><summary>Does it replace my calendar?</summary><p>No, it works with it. Connect Google Calendar and Tasks and Life OS keeps its own calendar and task list there, with reminders. Forward invites from any calendar to Life OS, or download a calendar file of everything for Apple or Outlook.</p></details>
+    <details><summary>What happens when the trial ends?</summary><p>If you choose a plan, nothing changes. If you don’t, your data stays readable and exportable, and adding or changing things pauses until you do.</p></details>
+  </div>
+</div></section></main><footer class="site-foot"><div class="wrap">
+    <div class="about" style="display:grid;gap:10px"><a class="logo" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--accent)"/><circle cx="32" cy="32" r="16" fill="none" stroke="var(--accent-ink)" stroke-width="4"/><path d="M32 20v12l8 6" stroke="var(--accent-ink)" stroke-width="4" stroke-linecap="round" fill="none"/></svg><b>Life OS</b></a><p>One private place for your family’s whole life. Remember what matters; plan for your best life.</p><p class="small">Screens on this site show a made-up sample family.</p></div>
+    <nav aria-label="Product"><b>Product</b><a href="features.html">Features</a><a href="learn.html">Learn Life OS</a><a href="pricing.html">Pricing</a><a href="app/index.html?demo=1">Try the demo</a></nav>
+    <nav aria-label="Account"><b>Account</b><a href="app/index.html#signup">Start a free trial</a><a href="app/index.html">Sign in</a></nav>
+    <nav aria-label="Legal"><b>Trust</b><a href="security.html">Security</a><a href="privacy.html">Privacy Policy</a><a href="health-privacy.html">Consumer Health Data Privacy Policy</a><a href="terms.html">Terms</a></nav>
+  </div></footer><script src="assets/site.js" defer></script></body></html>

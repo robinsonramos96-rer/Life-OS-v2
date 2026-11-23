@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Learn Life OS</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A ten-minute guide to Life OS with live examples you can try, whether or not you have an account.">
+<link rel="icon" href="app/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css"></head><body><header class="site-head"><div class="wrap">
+    <a class="logo" href="index.html" aria-label="Life OS home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--accent)"/><circle cx="32" cy="32" r="16" fill="none" stroke="var(--accent-ink)" stroke-width="4"/><path d="M32 20v12l8 6" stroke="var(--accent-ink)" stroke-width="4" stroke-linecap="round" fill="none"/></svg><b>Life OS</b></a>
+    <nav class="nav" aria-label="Main"><a href="features.html" >Features</a><a href="learn.html" aria-current="page">Learn</a><a href="pricing.html" >Pricing</a><a href="security.html" >Security</a></nav>
+    <div class="head-cta"><a class="btn sm signin" href="app/index.html">Sign in</a><a class="btn sm primary" href="app/index.html#signup">Start free</a></div>
+  </div></header><main>
+<section class="hero" style="padding-bottom:12px"><div class="wrap" style="grid-template-columns:minmax(0,1fr)"><div class="hero-copy"><h1>Learn Life OS in ten minutes</h1><p class="lede">Thirteen short lessons, in the order you’ll use them. The boxes below run the same code as the app, so you can practice here without an account. Dates are worked out from today, <span data-today></span>.</p>
+<div class="cta-row"><a class="btn" href="app/index.html?demo=1">Open the demo beside this page</a></div></div></div></section>
+<section class="section" style="padding-top:24px"><div class="wrap learn">
+  <nav class="toc" aria-label="Lessons"><a href="#idea"><span class="n">01</span>The one idea</a><a href="#typing"><span class="n">02</span>Add anything by typing</a><a href="#dates"><span class="n">03</span>Do date and due date</a><a href="#domains"><span class="n">04</span>Domains, areas and IDs</a><a href="#routines"><span class="n">05</span>Routines and upkeep</a><a href="#critical"><span class="n">06</span>Critical items and the safety net</a><a href="#calendar"><span class="n">07</span>The calendar and its filters</a><a href="#plans"><span class="n">08</span>Projects, goals and logs</a><a href="#review"><span class="n">09</span>The Inbox and the weekly review</a><a href="#email"><span class="n">10</span>Email to Life OS</a><a href="#google"><span class="n">11</span>Google Calendar and Tasks</a><a href="#sharing"><span class="n">12</span>Sharing with your household</a><a href="#data"><span class="n">13</span>Your phone and your data</a></nav>
+  <div>
+  <article class="lesson" id="idea"><h2><span class="n">01</span>The one idea</h2>
+    <p>Life OS is a single database of your household’s life, built so you spend little time managing it. You put things in quickly, it keeps them, and it brings back the few that need you. Start every visit on <b>Home</b>: Today first (your schedule, My Day and suggestions), the safety net beside it, the week planner below, and the life grid at the bottom. Tap any number at the top to see the items behind it, and fold any card you don’t need right now.</p>
+    <p>Three words carry most of the app: <b>remember</b> (capture it once), <b>plan</b> (give it a date that fits your week) and <b>catch</b> (critical things escalate before they slip).</p>
+    <p>Starting from nothing? <b>Settings → Start with the basics</b> asks about your cars, your home, your kids and pets, then adds the registrations, insurance renewals, upkeep and checkups most families lose track of, and asks for the dates you know.</p></article>
+
+  <article class="lesson" id="typing"><h2><span class="n">02</span>Add anything by typing</h2>
+    <p>Every Add box understands a short grammar. Write the thing, then add any of these, in any order:</p>
+    <div class="table-scroll"><table class="grammar"><thead><tr><th>Write</th><th>It means</th></tr></thead><tbody>
+      <tr><td><code>due fri</code> · <code>due mar 1</code> · <code>due 3/15</code></td><td>the deadline</td></tr>
+      <tr><td><code>do sat</code></td><td>the day you plan to work on it</td></tr>
+      <tr><td><code>tomorrow</code> · <code>fri</code> · <code>june 3</code> on its own</td><td>the do date (or the day of an event)</td></tr>
+      <tr><td><code>3pm</code> · <code>at 9:30am</code></td><td>a time, which makes it an event</td></tr>
+      <tr><td><code>on sat at 9am</code></td><td>an event on that day</td></tr>
+      <tr><td><code>every 90 days</code> · <code>every 6 months</code> · <code>every 5000 miles</code></td><td>a routine that repeats</td></tr>
+      <tr><td><code>#home</code> · <code>#hom</code> · <code>#minivan</code></td><td>a domain (by name, code or area), or a thing you own</td></tr>
+      <tr><td><code>@crystal</code> · <code>@kid1</code></td><td>who owns it; a child becomes who it’s for</td></tr>
+      <tr><td><code>!critical</code> · <code>!high</code> · <code>!low</code></td><td>critical turns on the safety net; the others set priority</td></tr>
+    </tbody></table></div>
+    <div class="sandbox" data-sandbox="quick">
+    <label for="qa-4">Practice here</label>
+    <input id="qa-4" value="dentist @kid1 fri 3pm #health" autocomplete="off" spellcheck="false">
+    <div class="examples"><button type="button" data-example="pay estimated tax due jan 15 #biz !critical">pay estimated tax due jan 15 #biz !critical</button><button type="button" data-example="replace hvac filter every 90 days #home">replace hvac filter every 90 days #home</button><button type="button" data-example="soccer practice on sat at 9am @kid2">soccer practice on sat at 9am @kid2</button><button type="button" data-example="read chapter 4 do tomorrow #growth">read chapter 4 do tomorrow #growth</button></div>
+    <div data-out></div></div>
+    <p class="small muted">No #tag? Life OS guesses the domain from common words (dentist means Health, plumber means Home) and shows its guess before you save. For a half-formed thought, use <b>Quick capture</b>: it goes to the <b>Inbox</b>, and sorting it later takes one tap.</p></article>
+
+  <article class="lesson" id="dates"><h2><span class="n">03</span>Do date and due date</h2>
+    <p>Most to-do apps give a task one date, so you end up moving deadlines to plan your week. Life OS keeps two:</p>
+    <ul><li><b>Due</b> is the real deadline. It only changes when you change it.</li><li><b>Do</b> is when you plan to work on it. If the day passes and it isn’t done, the do date clears, the task goes back to “Needs scheduling”, and a small “slipped” count goes up. The deadline stays where it was.</li></ul>
+    <p><b>My Day</b> is every task whose do date is today. It is one list, shown as <b>Today</b> on Home and as <b>My Day</b> in Tasks. Tap the sun on any task to add it or take it off. Below it, <b>Suggested</b> offers what is overdue, due today, slipped from an earlier day, coming due or important, plus appointments and events from the past week (picking one of those adds a follow-up task). Tick what you’ll work on and press <b>Add to My Day</b>, or <b>Pick for me</b> to fill the free time you have left. <b>Not today</b> hides a suggestion until tomorrow.</p>
+    <p>Not sure when to do things? Press <b>Plan my week</b> on Home. It suggests a do date for each unscheduled task, soonest deadline first, on the evening with the most room. Nothing moves until you accept.</p>
+    <div class="try"><b>Try it:</b> type <code>book plumber do thu due fri #home</code> in the practice box above. You’ll see both dates side by side: plan it Thursday, done by Friday.</div></article>
+
+  <article class="lesson" id="domains"><h2><span class="n">04</span>Domains, areas and IDs</h2>
+    <p>Every item lives in a <b>domain</b>, a part of life like Home or Health. Each domain has a short code, and every task, project, routine, record, event and thing gets an ID from it: <span class="ref">HOM-12</span>, <span class="ref">HLT-3</span>.</p>
+    <p>Inside a domain are <b>areas</b>, its corners: Family has Household, Kids and Relationships; Assets has Vehicles, Money and Digital. Areas go one level deep on purpose, so filing never turns into a chore, and an item never needs one.</p>
+    <ul><li>On a domain’s page, tap an area to narrow everything on it (tasks, upkeep, projects, the next 30 days, things, records, notes, logs) to that corner. <b>Filter everything to Family · Kids</b> then carries it to Home, Calendar, Tasks and Logs.</li><li>Each section of a domain’s page has its own pill: <b>Add task</b>, <b>Add event</b>, <b>Add record</b>, <b>Add note</b>, <b>Add log</b>, and <b>Add routine</b>, <b>Add thing</b>, <b>Add project</b> or <b>Add goal</b> where those show (or under <b>Also add here</b> until they do). It opens already in that domain and the area you’re looking at, so you type a title and press Enter.</li>
+      <li><b>Edit areas</b> on the domain page to add, rename, reorder or delete them. Renaming an area renames it on every item; deleting one asks where its items should go.</li>
+      <li>Type <code>#kids</code> in quick add or an email subject and the item lands in Family, area Kids.</li>
+      <li>IDs come from the domain, not the area, so moving an item between areas never changes its ID. Move it to another domain and it gets the next ID there; its old ID is remembered, so search still finds it.</li>
+      <li>In <b>Settings → Domains</b> you can rename, recolor, reorder, change a code, add your own, or delete one (its items move to the domain you pick).</li></ul>
+    <div class="shot"><picture><img src="assets/shots/domain-desktop.webp" alt="The Family domain page narrowed to the Kids area" width="1440" height="900" loading="lazy"></picture></div></article>
+
+  <article class="lesson" id="routines"><h2><span class="n">05</span>Routines and upkeep</h2>
+    <p>A <b>routine</b> is anything that repeats: changing the furnace filter, the kids’ dental cleanings, backing up the photo library. A routine can repeat by time, by a meter (miles, hours) or both, whichever comes first.</p>
+    <ul><li>Tie a routine to a <b>thing</b>, like the minivan, and log the odometer now and then. Life OS learns your miles per day and forecasts the date.</li><li>When it’s done, press <b>Log done</b> and type the reading if there is one. The next due date moves out from there.</li><li>Records like a registration or warranty have an expiry date, and show up as renewals on the calendar.</li></ul></article>
+
+  <article class="lesson" id="critical"><h2><span class="n">06</span>Critical items and the safety net</h2>
+    <p>Add <code>!critical</code> (or tick Critical in the editor) for anything that would hurt to miss: passports, registrations, tax payments, medical follow-ups. A critical item’s <b>lead time</b> (30 days unless you set another) decides when it starts to climb:</p>
+    <div class="ladder" style="max-width:640px"><div class="rung s1"><span class="when">within the lead time</span><b>Morning email</b>listed every morning</div><div class="rung s2"><span class="when">last quarter of it</span><b>Email alert</b>named in the subject line</div><div class="rung s3"><span class="when">last day</span><b>Both of you</b>flagged for every adult</div><div class="rung s4"><span class="when">after the date</span><b>Overdue</b>stays red on top</div></div>
+    <p>Home also shows <b>Needs a decision</b>: critical items with no date or no owner, ones that keep slipping, and Inbox items older than a week. And it flags a <b>quiet domain</b> when one has had much less activity than usual for its own pace.</p></article>
+
+  <article class="lesson" id="calendar"><h2><span class="n">07</span>The calendar and its filters</h2>
+    <p>Everything with a date appears on one calendar: do dates, deadlines, events, upkeep, renewals and milestones. Switch between day, week, month and year.</p>
+    <ul><li>Every page that can be filtered has a small grey pill under its title. It reads <b>Showing all</b>, or names what you’re seeing, like <b>Rob · Home</b>. Tap it to open the filter (on Tasks it opens in place), then tap a domain or person chip to hide it. Double-tap (or right-click) to show only that one. The <b>✕</b> beside the pill, or <b>Show everything</b>, resets.</li><li>It’s one filter for the whole app: set it on the calendar and Home, Tasks, Projects, Things and Logs already show the same thing.</li><li>Open <b>Advanced filters</b> for more: <b>Types</b> (tasks, milestones, appointments, events, upkeep, renewals), <b>When</b> (late, today, or the next 7, 30 or 90 days, always keeping anything late) and <b>Importance</b> (high and critical, or critical only). <b>Needs you first</b> never hides a critical item, whatever the advanced filters say.</li><li>In <b>Settings → Filter and views</b>, choose what the filter starts on: the one you used last, everything, or a saved view such as “Family week”.</li><li><b>Saved views</b> sit at the top of the filter on every page. <b>Save as view</b> names the filter you have, like “Family week”; tap a view to switch to it, and the pill shows its name. Select one of yours and tap its <b>×</b> to remove it.</li><li>Watching something closely for a while, like “Rob’s health”? Select its view and tap <b>Pin next to the filter</b>. It then sits beside the pill on every page: one tap to look, another to go back to everything.</li><li>On a computer, drag a task to another day to change its do date.</li><li>For the long view, Home has the <b>life timeline</b>: the same items on one line, a lane per part of life. Zoom from a day to three years by tapping a heading. As you zoom out it keeps what matters most labeled, and you can star anything as <b>Noteworthy</b> so it always shows.</li><li><b>Settings → Your data → Calendar file</b> gives you an .ics file for Google, Apple or Outlook calendars.</li></ul>
+    <div class="shot"><picture><img src="assets/shots/calendar-desktop.webp" alt="The Life OS calendar" width="1440" height="900" loading="lazy"></picture></div></article>
+
+  <article class="lesson" id="plans"><h2><span class="n">08</span>Projects, goals and logs</h2>
+    <p>A <b>project</b> is something you’re building that has an end, like setting up the home office. A <b>goal</b> is something you’re working toward on a horizon, like passing the PE exam. Tasks and milestones belong to one of them.</p>
+    <p>A <b>log</b> is something that happened, on a date. Each log is one of three kinds:</p>
+    <ul><li><b>Counts toward</b> a project or goal: pick it in Quick log, or in the log’s editor.</li><li><b>Upkeep</b> for a routine or thing: “Log done” on the oil change makes one of these, so the minivan keeps its own history.</li><li><b>On its own</b>: a journal note or a one-off, like a parent-teacher conference you don’t tie to anything.</li></ul>
+    <p>A goal can also <b>track a metric</b>, like Study hours. Then every log with that metric counts toward that goal by itself: log “Study session, 2 Study hours” and Pass the PE exam moves forward without you picking it. Set the weekly target on the metric’s chart.</p>
+    <ul><li>On <b>Projects &amp; goals</b>, each card shows tasks done, the next milestone, its metric’s weekly average against target, and how many logs count toward it. On the timeline, small ticks on a bar are those logs.</li><li>The filter works here too. Filter to Family and Logs shows only Family logs and charts; Projects shows Family’s projects and goals, plus any elsewhere that have Family tasks or logs, marked <b>Connected</b>, and tells you how many others are hidden.</li></ul>
+    <div class="shot"><picture><img src="assets/shots/logs-desktop.webp" alt="Logs and metrics, each log showing what it counts toward" width="1440" height="900" loading="lazy"></picture></div></article>
+
+  <article class="lesson" id="review"><h2><span class="n">09</span>The Inbox and the weekly review</h2>
+    <p>The <b>Inbox</b> holds half-formed things: an idea, a forwarded email with no date. Each one shows a suggested domain; one tap files it as a task, event, routine or note.</p>
+    <p>Once a week, open <b>Weekly review</b>. It takes about fifteen minutes and walks six steps: empty the inbox, look at what’s late, check the safety net, give a quiet domain a next step, glance at upkeep, and pick up to three domains to focus on next week. Home leans toward those.</p></article>
+
+  <article class="lesson" id="email"><h2><span class="n">10</span>Email to Life OS</h2>
+    <p>Your household’s address is in <b>Settings → Email to Life OS</b>. Save it as a contact named “Life OS”. Then send, forward or invite it like a person. Start the subject with one of these words to say what it is:</p>
+    <p class="mono small">Task · Todo · Reminder · Event · Appointment · Note · Log · Done · Routine · Record · Renewal · Idea</p>
+    <div class="sandbox" data-sandbox="email"><label for="mail-subject">Type an email subject</label><input id="mail-subject" value="Done: oil change 62,450 miles" autocomplete="off" spellcheck="false">
+      <div class="examples"><button type="button" data-example="Reminder: call the dentist fri #health">Reminder: call the dentist fri #health</button><button type="button" data-example="Event: recital sat 2pm @kid1">Event: recital sat 2pm @kid1</button><button type="button" data-example="Record: car insurance renewal due apr 15 #assets">Record: car insurance renewal due apr 15 #assets</button><button type="button" data-example="Fwd: Summer camp registration opens">Fwd: Summer camp registration opens</button></div><div data-out></div></div>
+    <ul><li>Calendar invites need no prefix. A moved invite moves the event; a canceled one archives it.</li><li>Only household members can send, from the email they sign in with. Add other addresses you send from in Settings.</li><li>If the address ever leaks, press <b>Make a new address</b>. The old one stops working at once.</li></ul></article>
+
+  <article class="lesson" id="google"><h2><span class="n">11</span>Google Calendar and Tasks</h2>
+    <p>In <b>Settings → Google Calendar and Tasks</b>, press <b>Connect Google</b> and allow access. Life OS makes a calendar and a task list called “Life OS” in your Google account and keeps them current while Life OS is open. Your phone’s reminders come from Google, so they work even when Life OS is closed.</p>
+    <ul><li><b>What goes:</b> appointments and events; critical or high-priority deadlines, milestones and renewals as all-day dates with a reminder at their lead time; upkeep coming due; and tasks, in Google Tasks on their do date. Untick any of them.</li>
+      <li><b>Whose:</b> yours, Shared, and anything about you, or everyone’s. Each adult connects their own Google.</li>
+      <li><b>Open in Life OS:</b> every event and task has a link to its item, so one tap from your calendar opens it.</li>
+      <li><b>Back from Google:</b> move an appointment or rename it and Life OS follows. Tick a task off in Google Tasks and it’s done. Add an event to the Life OS calendar and it becomes a Life OS event.</li>
+      <li><b>Delete in Google</b> means “not on my calendar”: Life OS stops sending that one and changes nothing else. Its editor has <b>Send it again</b>.</li>
+      <li>Google lets a web app keep access for about an hour at a time, so after a while Life OS asks for a tap to resume. Your reminders keep working meanwhile, and Home tells you if anything is waiting to go.</li></ul></article>
+
+  <article class="lesson" id="sharing"><h2><span class="n">12</span>Sharing with your household</h2>
+    <ol><li>In <b>Settings → Household</b>, press <b>Invite your partner</b> and send the link. It works once and expires in 14 days.</li><li>They open it, make an account, and land in your household with everything already there.</li><li>Add children in <b>Settings → People</b>. Children are <b>subjects</b>: who an item is about. Adults are <b>owners</b>: who does it.</li></ol>
+    <p>Everything is shared by default. Tick <b>Private</b> when you create an item to keep it to yourself.</p></article>
+
+  <article class="lesson" id="data"><h2><span class="n">13</span>Your phone and your data</h2>
+    <ul><li><b>iPhone:</b> open Life OS in Safari, tap Share, then <b>Add to Home Screen</b>. <b>Android:</b> in Chrome, tap ⋮ then <b>Install app</b>.</li><li>It works offline and syncs when you’re back online.</li><li>Press <kbd>/</kbd> or <kbd>Ctrl</kbd> <kbd>K</kbd> to search everything, and <kbd>Esc</kbd> to close a panel.</li><li><b>Logs &amp; history → Everything that happened</b> lists what got done, what happened and what was added, with no extra typing. <b>Download Excel</b> gives you a workbook with one sheet per kind (tasks, events, routines, logs, records, projects and goals), following the filter. <b>Settings → Your data</b> also has a full backup and a calendar file.</li><li>Never store card numbers, bank account numbers or ID numbers. Write where to find them instead.</li></ul>
+    <div class="cta-row"><a class="btn primary" href="app/index.html#signup">Start your free 30 days</a><a class="btn" href="app/index.html?demo=1">Practice in the demo</a></div></article>
+  </div>
+</div></section></main><footer class="site-foot"><div class="wrap">
+    <div class="about" style="display:grid;gap:10px"><a class="logo" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--accent)"/><circle cx="32" cy="32" r="16" fill="none" stroke="var(--accent-ink)" stroke-width="4"/><path d="M32 20v12l8 6" stroke="var(--accent-ink)" stroke-width="4" stroke-linecap="round" fill="none"/></svg><b>Life OS</b></a><p>One private place for your family’s whole life. Remember what matters; plan for your best life.</p><p class="small">Screens on this site show a made-up sample family.</p></div>
+    <nav aria-label="Product"><b>Product</b><a href="features.html">Features</a><a href="learn.html">Learn Life OS</a><a href="pricing.html">Pricing</a><a href="app/index.html?demo=1">Try the demo</a></nav>
+    <nav aria-label="Account"><b>Account</b><a href="app/index.html#signup">Start a free trial</a><a href="app/index.html">Sign in</a></nav>
+    <nav aria-label="Legal"><b>Trust</b><a href="security.html">Security</a><a href="privacy.html">Privacy Policy</a><a href="health-privacy.html">Consumer Health Data Privacy Policy</a><a href="terms.html">Terms</a></nav>
+  </div></footer><script src="assets/site.js" defer></script></body></html>
