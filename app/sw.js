@@ -1,5 +1,5 @@
 // Offline shell: the app works with no connection; data lives in IndexedDB.
-const CACHE = 'lifeos-2.0.0-beta.11';
+const CACHE = 'lifeos-2.0.0-beta.11.1';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg', './fonts/hanken-grotesk-latin-400-normal.woff2', './fonts/hanken-grotesk-latin-500-normal.woff2', './fonts/hanken-grotesk-latin-600-normal.woff2', './fonts/hanken-grotesk-latin-700-normal.woff2', './fonts/newsreader-latin-400-normal.woff2', './fonts/newsreader-latin-500-normal.woff2'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
